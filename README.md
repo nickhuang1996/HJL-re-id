@@ -16,6 +16,14 @@ HJL-re-id
 - Journal: [Pattern Recognition Letters](https://www.sciencedirect.com/journal/pattern-recognition-letters)
 - JCR: Q2
 
+### Dependencies
+ - Python >= 3.6
+ - Pytorch >= 1.0.0
+ - Numpy
+ - tqdm
+ - scipy
+ - torchvision==0.2.1
+
 # Performances
 ## Market1501
 | Methods | mAP |	Rank-1 | Rank-5 |	Rank-10 | 
