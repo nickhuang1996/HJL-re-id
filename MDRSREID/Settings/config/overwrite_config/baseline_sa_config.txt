@@ -1,0 +1,43 @@
+cfg.model.backbone.last_conv_stride = 2
+cfg.model.pool_type = 'MDRSPool'
+cfg.model.name = 'MDRS'
+cfg.model.em_dim = 256
+cfg.model.use_ps = True
+cfg.dataset.im.h_w = (384, 128)
+cfg.dataset.test.names = ['market1501']
+cfg.dataset.use_pose_landmark_mask = False
+cfg.dataset.use_ps_label = True
+cfg.dataset.train.type = 'Supervised'  # 'Supervised'
+cfg.dataset.train.source.name = 'market1501'  # ['market1501', 'cuhk03_np_detected_jpg', 'duke']
+cfg.dataset.train.target.name = 'market1501'
+cfg.dataloader.train.batch_type = 'pk2'
+cfg.dataloader.train.batch_size = 32 # 24,32
+cfg.dataloader.train.batch_id = 8  # 6,8
+cfg.dataloader.train.batch_image = 4
+cfg.dataset.train.before_to_tensor_transform_list = ['hflip', 'resize'] # 'random_sized_rect_crop'
+cfg.dataset.train.after_to_tensor_transform_list = ['random_erasing']
+cfg.eval.re_rank = False
+cfg.tri_loss.weight = 0
+cfg.tri_loss.margin = 0.3
+cfg.src_ps_loss.weight = 1
+cfg.src_psgp_loss.weight = 0
+cfg.inv_loss.weight = 0  # Unsupervised use
+cfg.optim.optimizer = 'adam'
+cfg.optim.ft_lr = 2e-4  #
+cfg.optim.new_params_lr = 2e-4  #
+cfg.optim.epochs_per_val = 20
+cfg.optim.lr_decay_epochs = (260, 300, 340)  #
+cfg.optim.normal_epochs = 340  # Not including warmup/pretrain
+cfg.optim.resume = False
+cfg.only_test = False  #
+
+cfg.blocksetting.backbone = 1
+cfg.blocksetting.pool = 1
+cfg.blocksetting.reduction = 1
+cfg.blocksetting.classifier = 1
+cfg.blocksetting.ps = 1
+
+
+
+cfg.vis.use = False
+cfg.vis.heat_map.use = False

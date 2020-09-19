@@ -1,0 +1,6 @@
+cfg.model.pool_type = 'PCBPool'
+cfg.model.name = 'PCB'
+cfg.model.em_dim = 256
+cfg.model.num_parts = 4
+cfg.model.reduction.use_relu = True
+cfg.dataset.im.h_w = (384, 128)
