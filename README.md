@@ -55,6 +55,7 @@ A awesome project for person re-id.
 
 ## DukeMTMC-reID
 | – | Labelled | - | - | - | Detected | - | - | - |
+|---|---|---|---|---|---|---|---|---|
 |Methods | mAP |	Rank-1 | Rank-5 |	Rank-10 | mAP |	Rank-1 | Rank-5 |	Rank-10 | 
 
 
