@@ -10,7 +10,7 @@ A awesome project for person re-id.
 
 # Performances
 - Market1501
-| Methods | mAP |	Rank-1 | Rank-5 |	Rank-10
+| Methods | mAP |	Rank-1 | Rank-5 |	Rank-10 | 
 |---|---|---|---|---|
 |MDRS |	87.6 | 95.8 |	98.4 | 99.1 |
 |Pyramid | 88.2 | 95.7 | 98.4 | 99.0 |
