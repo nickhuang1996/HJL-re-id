@@ -53,7 +53,7 @@ A awesome project for person re-id.
 | GP-reid | 72.8 | 85.2 | – | – |
 | AOS | 62.1 | 79.2 | – | – |
 
-## DukeMTMC-reID
+## CUHK03
 | – | Labelled | - | - | - | Detected | - | - | - |
 |---|---|---|---|---|---|---|---|---|
 | Methods | mAP |	Rank-1 | Rank-5 |	Rank-10 | mAP |	Rank-1 | Rank-5 |	Rank-10 | 
