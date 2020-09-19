@@ -16,7 +16,7 @@ HJL-re-id
 - Journal: [Pattern Recognition Letters](https://www.sciencedirect.com/journal/pattern-recognition-letters)
 - JCR: Q2
 ## Architecture
-![](imgs/architecture.jpg)
+![](imgs/architectur.jpg)
 
 ### Dependencies
  - Python >= 3.6
