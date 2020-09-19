@@ -1,4 +1,5 @@
-# HJL-re-id
+HJL-re-id
+=========
 A awesome project for person re-id.
 
 # Introduction
@@ -7,6 +8,9 @@ A awesome project for person re-id.
 - I has estabilished the structure containing the introduction of person re-id models like `PCB`,`MGN` and `MDRS`(my paper), `PGFA` and `HOReID`. These structures are all reproduced by myself in this code framework.
 - If you have any quesions, please contact me by my email. 
 - My emails is: nickhuang1996@126.com.
+
+# MDRS
+[CVPR2020] High-Order Information Matters: Learning Relation and Topology for Occluded Person Re-Identification. [paper](http://openaccess.thecvf.com/content_CVPR_2020/html/Wang_High-Order_Information_Matters_Learning_Relation_and_Topology_for_Occluded_Person_CVPR_2020_paper.html)
 
 # Performances
 ## Market1501
