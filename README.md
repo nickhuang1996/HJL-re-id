@@ -1,6 +1,6 @@
 HJL-re-id
 =========
-- A awesome project for person re-id. 
+- An awesome project for person re-id. 
 - This is the pytorch implementation the paper `Joint multi-scale discrimination and region segmentation for person re-ID`.[paper](https://www.sciencedirect.com/science/article/pii/S0167865520303275#bib0023)
 
 # Introduction
