@@ -10,7 +10,7 @@ A awesome project for person re-id.
 - My emails is: nickhuang1996@126.com.
 
 # MDRS
-- Joint multi-scale discrimination and region segmentation for person re-ID. [paper](https://www.sciencedirect.com/science/article/pii/S0167865520303275#bib0023)
+- Paper:Joint multi-scale discrimination and region segmentation for person re-ID(MDRS). [paper](https://www.sciencedirect.com/science/article/pii/S0167865520303275#bib0023)
 - Journal：[Pattern Recognition Letters](https://www.sciencedirect.com/journal/pattern-recognition-letters)
 - JCR: Q2
 
