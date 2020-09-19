@@ -54,8 +54,8 @@ A awesome project for person re-id.
 | AOS | 62.1 | 79.2 | – | – |
 
 ## DukeMTMC-reID
-| Methods |---|	Labelled |---|---| Detected |---|
-|---| mAP |	Rank-1 | Rank-5 |	Rank-10 | mAP |	Rank-1 | Rank-5 |	Rank-10 | 
+|---|	Labelled |---|---|---| Detected |---|---|---|
+|Methods | mAP |	Rank-1 | Rank-5 |	Rank-10 | mAP |	Rank-1 | Rank-5 |	Rank-10 | 
 
 
 
