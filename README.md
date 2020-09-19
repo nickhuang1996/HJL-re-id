@@ -10,7 +10,7 @@ A awesome project for person re-id.
 - My emails is: nickhuang1996@126.com.
 
 # MDRS
-[CVPR2020] High-Order Information Matters: Learning Relation and Topology for Occluded Person Re-Identification. [paper](http://openaccess.thecvf.com/content_CVPR_2020/html/Wang_High-Order_Information_Matters_Learning_Relation_and_Topology_for_Occluded_Person_CVPR_2020_paper.html)
+Joint multi-scale discrimination and region segmentation for person re-ID. [paper](https://www.sciencedirect.com/science/article/pii/S0167865520303275#bib0023)
 
 # Performances
 ## Market1501
