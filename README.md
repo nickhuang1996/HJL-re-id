@@ -1,7 +1,7 @@
 HJL-re-id
 =========
 - A awesome project for person re-id. 
-- This is the pytorch implementation the paper `Joint multi-scale discrimination and region segmentation for person re-ID`[paper](https://www.sciencedirect.com/science/article/pii/S0167865520303275#bib0023)
+- This is the pytorch implementation the paper `Joint multi-scale discrimination and region segmentation for person re-ID`.[paper](https://www.sciencedirect.com/science/article/pii/S0167865520303275#bib0023)
 
 # Introduction
 - This repository is for person re-id including supervised learning, unsupervised learning and occluded person re-id task. You can utilize this code to learn how to make `person re-id`tasks. 
