@@ -12,6 +12,7 @@ A awesome project for person re-id.
 # MDRS
 - Joint multi-scale discrimination and region segmentation for person re-ID. [paper](https://www.sciencedirect.com/science/article/pii/S0167865520303275#bib0023)
 - Journal：[Pattern Recognition Letters](https://www.sciencedirect.com/journal/pattern-recognition-letters)
+- JCR: Q2
 
 # Performances
 ## Market1501
