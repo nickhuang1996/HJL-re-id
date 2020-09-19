@@ -36,7 +36,7 @@ A awesome project for person re-id.
 | PAN | 63.4 | 82.8 | – | – |
 | SVDNet | 62.1 | 82.3 | 92.3 | 95.2 |
 
-## Market1501
+## DukeMTMC-reID
 | Methods | mAP |	Rank-1 | Rank-5 |	Rank-10 | 
 |---|---|---|---|---|
 | MDRS | 79.4 | 89.4 | 95.1 | 96.8 |
