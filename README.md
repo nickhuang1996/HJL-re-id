@@ -52,11 +52,11 @@ ${project_dir}/ReID_dataset
 ### market1501 structure
 ```
 ${project_dir}/ReID_dataset/market1501
-    Market-1501-v15.09.15                   # Extracted from Market-1501-v15.09.15.zip, http://www.liangzheng.org/Project/project_reid.html
+    Market-1501-v15.09.15                       # Extracted from Market-1501-v15.09.15.zip, http://www.liangzheng.org/Project/project_reid.html
         bounding_box_test
         bounding_box_train
-        bounding_box_train_camstyle
-        bounding_box_train_resize           # 256×256
+        bounding_box_train_camstyle             # unsupervised learning
+        bounding_box_train_resize               # 256×256
         gt_bbox
         gt_query
         pytorch
@@ -67,12 +67,63 @@ ${project_dir}/ReID_dataset/market1501
             train_all
             val
         query
-    Market-1501-v15.09.15_ps_label
+    Market-1501-v15.09.15_ps_label              # segmentation label 
         bounding_box_test
-        bounding_box_train          # 256×256
+        bounding_box_train
         gt_bbox
         query
     bounding_box_train_duke_style
+``` 
+
+### duke structure
+```
+${project_dir}/ReID_dataset/market1501
+    bounding_box_train_market1501_style
+    DukeMTMC-reID                               # Extracted from DukeMTMC-reID.zip, https://github.com/layumi/DukeMTMC-reID_evaluation
+        bounding_box_test
+        bounding_box_train
+        bounding_box_train_camstyle             # unsupervised learning
+        pytorch
+            gallery
+            query
+            train
+            train_all
+            val
+        query
+    DukeMTMC-reID_ps_label                      # segmentation label 
+        bounding_box_test
+        bounding_box_train
+        gt_bbox
+        query
+    Occluded_Duke
+        bounding_box_test
+        bounding_box_train
+        heatmaps                                # .npy files
+            bounding_box_test
+            bounding_box_train
+            processed_data
+                gallery
+                query
+                train 
+        processed_data                          # person ID is folder name
+            gallery
+            query
+            train
+        query
+        test_pose_storage
+            gallery
+                sep-json
+                alphapose-results.json
+                gallery.list
+                show.py
+            query
+                sep-json
+                1.list
+                0184_c4_f0056533.jpg
+                0184_c4_f0056533a.jpg
+                alphapose-results.json
+                show.py
+                show1.py
 ``` 
 
 
