@@ -18,6 +18,10 @@ HJL-re-id
 - web of science
 ## Architecture
 ![architecture.jpg](imgs/architecture.jpg)
+ 
+ ## Ranked Images
+![ranked_images.jpg](imgs/ranked_images.jpg)
+- Re-ID examples of MDRS on Market-1501 dataset. The retrieved images are all from the gallery set with similarity scores shown above each image. Images with similarity scores in red are negative results. The introduction of multi-scale discriminative feature extraction and region segmentation boost the Re-ID performance.
 
 ### Dependencies
  - Python >= 3.6
@@ -26,10 +30,6 @@ HJL-re-id
  - tqdm
  - scipy
  - torchvision==0.2.1
- 
- ## Ranked Images
-![ranked_images.jpg](imgs/ranked_images.jpg)
-- Re-ID examples of MDRS on Market-1501 dataset. The retrieved images are all from the gallery set with similarity scores shown above each image. Images with similarity scores in red are negative results. The introduction of multi-scale discriminative feature extraction and region segmentation boost the Re-ID performance.
 
 # Performances
 ## Market1501
