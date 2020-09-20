@@ -89,7 +89,7 @@ ${project_dir}/ReID_dataset/market1501
 
 ### duke structure
 ```
-${project_dir}/ReID_dataset/market1501
+${project_dir}/ReID_dataset/duke
     bounding_box_train_market1501_style
     DukeMTMC-reID                               # Extracted from DukeMTMC-reID.zip, https://github.com/layumi/DukeMTMC-reID_evaluation
         bounding_box_test
@@ -138,6 +138,50 @@ ${project_dir}/ReID_dataset/market1501
                 show1.py
 ``` 
 
+### cuhk03_np_detected_jpg structure
+```
+${project_dir}/ReID_dataset/cuhk03_np_detected_jpg
+    cuhk03-np                              # Extracted from cuhk03-np.zip, https://pan.baidu.com/s/1RNvebTccjmmj1ig-LVjw7A
+        datected
+            bounding_box_test
+            bounding_box_train
+            pytorch
+                gallery
+                query
+                train
+                train_all
+                val
+            query
+        labeled
+            bounding_box_test
+            bounding_box_train
+            query
+    cuhk03-np-jpg                         # Created from code
+        detected
+            bounding_box_test
+            bounding_box_train
+            pytorch
+                gallery
+                query
+                train
+                train_all
+                val
+            query
+        labeled
+            bounding_box_test
+            bounding_box_train
+            pytorch
+                gallery
+                query
+                train
+                train_all
+                val
+            query
+    cuhk03-np-jpg_ps_label
+        bounding_box_test
+        bounding_box_train
+        query    
+``` 
 
 # Performances
 ## Market1501
