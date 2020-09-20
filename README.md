@@ -11,7 +11,10 @@ HJL-re-id
 - If you have any quesions, please contact me by my email. 
 - My emails is: *nickhuang1996@126.com*.
 
-# Classical models
+# Classical models 
+
+These models are all reproduced by myself through this code framework.
+
 - PCB [ECCV2018] [*Beyond Part Models: Person Retrieval with Refined Part Pooling (and A Strong Convolutional Baseline)*](https://arxiv.org/pdf/1711.09349.pdf)
 - MGN [ACM Multimedia 2018] [*Learning Discriminative Features with Multiple Granularities for Person Re-Identification*](https://arxiv.org/abs/1804.01438)
 - PGFA [ICCV2019] [*Pose-Guided Feature Alignment for Occluded Person Re-Identification*](https://ieeexplore.ieee.org/document/9010704)
@@ -364,7 +367,7 @@ def parser_args():
 # Other models
 - We have provided [PGFAReIDTrainer.py](MDRSREID/Trainer/PGFAReIDTrainer.py) and 
 [HOReIDTrainer.py](MDRSREID/Trainer/HOReIDTrainer.py) for `PGFA` and `HOReID`.
+
 # To Do
 - Add instructions of other model `MGN`, `PCB`, `PGFA` and `HOReID`.
-
-- and I am considering if `MGNReID.py` and `PCBReIDTRainer.py` are necessary.
+- I will consider if `MGNReID.py` and `PCBReIDTRainer.py` are necessary.
