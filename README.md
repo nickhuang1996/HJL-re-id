@@ -2,7 +2,7 @@ HJL-re-id
 =========
 - An awesome project for person re-id. 
 - This project contains adequate support for `log recording`, `loss monitoring` and `visualization ranked images`.
-- This is the pytorch implementation the paper `Joint multi-scale discrimination and region segmentation for person re-ID`.[paper](https://www.sciencedirect.com/science/article/pii/S0167865520303275#bib0023)
+- This is the pytorch implementation the paper [*Joint multi-scale discrimination and region segmentation for person re-ID*](https://www.sciencedirect.com/science/article/pii/S0167865520303275#bib0023).
 
 # Introduction
 - This repository is for person re-id including supervised learning, unsupervised learning and occluded person re-id task. You can utilize this code to learn how to make `person re-id`tasks. 
@@ -12,7 +12,7 @@ HJL-re-id
 - My emails is: nickhuang1996@126.com.
 
 # MDRS
-- Name: Joint multi-scale discrimination and region segmentation for person re-ID. [paper](https://www.sciencedirect.com/science/article/pii/S0167865520303275#bib0023)
+- Name: [*Joint multi-scale discrimination and region segmentation for person re-ID*](https://www.sciencedirect.com/science/article/pii/S0167865520303275#bib0023)
 - Journal: [Pattern Recognition Letters](https://www.sciencedirect.com/journal/pattern-recognition-letters)
 - JCR: Q2
 - web of science
