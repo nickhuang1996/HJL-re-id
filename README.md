@@ -12,10 +12,10 @@ HJL-re-id
 - My emails is: *nickhuang1996@126.com*.
 
 # Classical models
-- PCB [] []()
-- MGN [] []()
+- PCB [ECCV2018] [*Beyond Part Models: Person Retrieval with Refined Part Pooling (and A Strong Convolutional Baseline)*](https://arxiv.org/pdf/1711.09349.pdf)
+- MGN [ACM Multimedia 2018] [*Learning Discriminative Features with Multiple Granularities for Person Re-Identification*](https://arxiv.org/abs/1804.01438)
 - PGFA [ICCV2019] [*Pose-Guided Feature Alignment for Occluded Person Re-Identification*](https://ieeexplore.ieee.org/document/9010704)
-- HOReID [CVPR2020] [*High-Order Information Matters: Learning Relation and Topology for Occluded Person Re-Identification*](http://openaccess.thecvf.com/content_CVPR_2020/html/Wang_High-Order_Information_Matters_Learning_Relation_and_Topology_for_Occluded_Person_CVPR_2020_paper.html).
+- HOReID [CVPR2020] [*High-Order Information Matters: Learning Relation and Topology for Occluded Person Re-Identification*](http://openaccess.thecvf.com/content_CVPR_2020/html/Wang_High-Order_Information_Matters_Learning_Relation_and_Topology_for_Occluded_Person_CVPR_2020_paper.html)
 
 # Citation
 
