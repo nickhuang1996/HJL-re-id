@@ -217,6 +217,65 @@ ${project_dir}/weights_results
         ...
 ```
 
+# Train and Test
+### No IDE
+- if you want to command, followed by:
+- `python demo.py --model_name MDRS
+    --exp_dir ${project_dir}/weights_results/HJLReID/MDRS_ADAM_random_erasing_margin_0.3_market_best
+    --default_config_path $(project_dir)/HJLReID/MDRSREID/Settings/config/default_config.py
+    --ow_config_path $(project_dir)/HJLReID/MDRSREID/Settings/config/overwrite_config/MDRS_config_ADAM_best_market1501.txt
+    --ow_str cfg.dataset.train.name = 'market1501'`
+### IDE
+- or if you have IDE like `pycharm`, you can just modify `MDRSREID/parser_args/parser_args.py`
+- You just modify `--exp_dir` and `--ow_config_path`. Then run `demo.py`.
+
+|dataset| exp_dir | ow_config_path |
+|---|---|---|
+| market | ${project_dir}/weights_results/HJL-ReID/MDRS_ADAM_random_erasing_margin_0.3_market_best | $(project_dir)/HJL-ReID/MDRSREID/Settings/config/overwrite_config/MDRS_config_ADAM_best_market1501.txt |
+| duke | ${project_dir}/weights_results/HJL-ReID/MDRS_ADAM_random_erasing_margin_0.3_duke_best | $(project_dir)/HJL-ReID/MDRSREID/Settings/config/overwrite_config/MDRS_config_ADAM_best_duke.txt |
+| cuhk03 | ${project_dir}/weights_results/HJL-ReID/MDRS_ADAM_random_erasing_margin_0.3_cuhk_jpg_best | $(project_dir)/HJL-ReID/MDRSREID/Settings/config/overwrite_config/MDRS_config_ADAM_best_cuhk03_jpg.txt |
+- e.g:
+```
+import argparse
+
+
+def parser_args():
+    """
+    :argument:
+        --exp_dir
+        --default_config_path
+        --ow_config_path
+        --ow_str
+    :return:
+    """
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--model_name',
+                        type=str,
+                        default='MDRS',
+                        help='[Optional] Model Name for experiment directory in current directory if exp_dir is None')
+    parser.add_argument('--exp_dir',
+                        type=str,
+                        default='D:/weights_results/HJL-ReID/MDRS_ADAM_random_erasing_margin_0.3_market_best',
+                        help='[Optional] Directory to store experiment output, '
+                             'including log files and model checkpoint, etc.')
+    parser.add_argument('--default_config_path',
+                        type=str,
+                        default='D:/Pycharm_Project/HJL-ReID/MDRSREID/Settings/config/default_config.py',
+                        help='A configuration file.')
+    parser.add_argument('--ow_config_path',
+                        type=str,
+                        default='D:/Pycharm_Project/HJL-ReID/MDRSREID/Settings/config/overwrite_config/MDRS_config_ADAM_best_market1501.txt',
+                        help='[Optional] A text file, each line being an item to overwrite the cfg_file.')
+    parser.add_argument('--ow_str',
+                        type=str,
+                        default='cfg.dataset.train.name = \'market1501\'',
+                        help="""[Optional] Items to overwrite the cfg_file. 
+                        E.g. "cfg.dataset.train.name = \'market1501\''; cfg.model.em_dim = 256" """)
+    args, _ = parser.parse_known_args()
+    return args
+
+```
+
 # Performances
 ## Market1501
 | Methods | mAP |	Rank-1 | Rank-5 |	Rank-10 | 
