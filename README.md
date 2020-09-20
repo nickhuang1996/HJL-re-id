@@ -11,6 +11,12 @@ HJL-re-id
 - If you have any quesions, please contact me by my email. 
 - My emails is: *nickhuang1996@126.com*.
 
+# Classical models
+- PCB [] []()
+- MGN [] []()
+- PGFA [ICCV2019] [*Pose-Guided Feature Alignment for Occluded Person Re-Identification*](https://ieeexplore.ieee.org/document/9010704)
+- HOReID [CVPR2020] [*High-Order Information Matters: Learning Relation and Topology for Occluded Person Re-Identification*](http://openaccess.thecvf.com/content_CVPR_2020/html/Wang_High-Order_Information_Matters_Learning_Relation_and_Topology_for_Occluded_Person_CVPR_2020_paper.html).
+
 # Citation
 
 If you find our work useful, please kindly cite our paper:
@@ -354,7 +360,11 @@ def parser_args():
 | PAN | 35.0 | 36.9 | – | – | 34.0 | 36.3 | – | – |
 | IDE | 21.0 | 22.2 | – | – | 19.7 | 21.3 | – | – |
 
+
+# Other models
+- We have provided [PGFAReIDTrainer.py](MDRSREID/Trainer/PGFAReIDTrainer.py) and 
+[HOReIDTrainer.py](MDRSREID/Trainer/HOReIDTrainer.py) for `PGFA` and `HOReID`.
 # To Do
 - Add instructions of other model `MGN`, `PCB`, `PGFA` and `HOReID`.
-- We have provided [PGFAReIDTrainer.py](MDRSREID/Trainer/PGFAReIDTrainer.py) and 
-[HOReIDTrainer.py](MDRSREID/Trainer/HOReIDTrainer.py), and I am considering if `MGNReID.py` and `PCBReIDTRainer.py` are necessary.
+
+- and I am considering if `MGNReID.py` and `PCBReIDTRainer.py` are necessary.
