@@ -188,6 +188,35 @@ ${project_dir}/ReID_dataset/cuhk03_np_detected_jpg
         query    
 ``` 
 
+## Models
+| Name | Baidudisk |
+|------|------|
+| ResNet50 | - |
+| MDRS_market | - |
+| MDRS_duke | - |
+| MDRS_cuhk | - |
+
+- Pretrained models(*ResNet50*) restores `backbone` weights.
+- `HJL-ReID` is the project name, where three datasets results and weights are produced after training.
+- `MDRS_feat_dict.mat` restores gallery and query data features by extracted from trained models for evaluations.
+- You are supposed to download and save these files according to the following structure:
+```
+${project_dir}/weights_results
+    pretrained_models
+        resnet50-19c8e357.pth
+    HJL-ReID
+        MDRS_ADAM_random_erasing_margin_0.3_market_best
+            tensorboard
+            ckpt.pth
+            default_config.py
+            MDRS_feat_dict.mat
+        MDRS_ADAM_random_erasing_margin_0.3_duke_best
+            ...
+        MDRS_ADAM_random_erasing_margin_0.3_cuhk_best
+            ...
+        ...
+```
+
 # Performances
 ## Market1501
 | Methods | mAP |	Rank-1 | Rank-5 |	Rank-10 | 
