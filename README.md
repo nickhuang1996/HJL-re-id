@@ -26,6 +26,7 @@ If you find our work useful, please kindly cite our paper:
 # MDRS
 - Name: [*Joint multi-scale discrimination and region segmentation for person re-ID*](https://www.sciencedirect.com/science/article/pii/S0167865520303275#bib0023)
 - Journal: [*Pattern Recognition Letters*](https://www.sciencedirect.com/journal/pattern-recognition-letters)
+- [Volume 138](https://www.sciencedirect.com/journal/pattern-recognition-letters/vol/138/suppl/C), October 2020, Pages 540-547
 - JCR: Q2
 - web of science
 ## Architecture
@@ -189,12 +190,15 @@ ${project_dir}/ReID_dataset/cuhk03_np_detected_jpg
 ``` 
 
 ## Models
-| Name | Baidudisk |
-|------|------|
-| ResNet50 | - |
-| MDRS_market | - |
-| MDRS_duke | - |
-| MDRS_cuhk | - |
+- Download link: [weights_results](https://pan.baidu.com/s/1E3Iy1mAdui_VY7ydNB-RDw) 
+- Pwd: ei5o
+
+| Name | 
+|------|
+| ResNet50 |
+| MDRS_ADAM_random_erasing_margin_0.3_market_best |
+| MDRS_ADAM_random_erasing_margin_0.3_duke_best |
+| MDRS_ADAM_random_erasing_margin_0.3_cuhk_jpg_best |
 
 - Pretrained models(*ResNet50*) restores `backbone` weights.
 - `HJL-ReID` is the project name, where three datasets results and weights are produced after training.
@@ -212,7 +216,7 @@ ${project_dir}/weights_results
             MDRS_feat_dict.mat
         MDRS_ADAM_random_erasing_margin_0.3_duke_best
             ...
-        MDRS_ADAM_random_erasing_margin_0.3_cuhk_best
+        MDRS_ADAM_random_erasing_margin_0.3_cuhk_jpg_best
             ...
         ...
 ```
@@ -348,4 +352,7 @@ def parser_args():
 | PAN | 35.0 | 36.9 | – | – | 34.0 | 36.3 | – | – |
 | IDE | 21.0 | 22.2 | – | – | 19.7 | 21.3 | – | – |
 
-
+# To Do
+- Add instructions of other model `MGN`, `PCB`, `PGFA` and `HOReID`.
+- We have provided [PGFAReIDTrainer.py](MDRSREID/Trainer/PGFAReIDTrainer.py) and 
+[HOReIDTrainer.py](MDRSREID/Trainer/HOReIDTrainer.py), and I am considering if `MGNReID.py` and `PCBReIDTRainer.py` are necessary.
