@@ -30,6 +30,51 @@ HJL-re-id
  - tqdm
  - scipy
  - torchvision==0.2.1
+ 
+# Dataset Structure
+## Main Structure
+```
+${project_dir}/ReID_dataset
+    market1501
+        Market-1501-v15.09.15                   # Extracted from Market-1501-v15.09.15.zip, http://www.liangzheng.org/Project/project_reid.html
+        Market-1501-v15.09.15_ps_label
+        bounding_box_train_duke_style
+    cuhk03_np_detected_jpg
+        cuhk03-np                               # Extracted from cuhk03-np.zip, https://pan.baidu.com/s/1RNvebTccjmmj1ig-LVjw7A
+        cuhk03-np-jpg                           # Created from code
+        cuhk03-np-jpg_ps_label
+    duke
+        bounding_box_train_market1501_style
+        DukeMTMC-reID                           # Extracted from DukeMTMC-reID.zip, https://github.com/layumi/DukeMTMC-reID_evaluation
+        DukeMTMC-reID_ps_label
+        Occluded_Duke
+``` 
+### market1501 structure
+```
+${project_dir}/ReID_dataset/market1501
+    Market-1501-v15.09.15                   # Extracted from Market-1501-v15.09.15.zip, http://www.liangzheng.org/Project/project_reid.html
+        bounding_box_test
+        bounding_box_train
+        bounding_box_train_camstyle
+        bounding_box_train_resize           # 256×256
+        gt_bbox
+        gt_query
+        pytorch
+            gallery
+            multi-query
+            query
+            train
+            train_all
+            val
+        query
+    Market-1501-v15.09.15_ps_label
+        bounding_box_test
+        bounding_box_train          # 256×256
+        gt_bbox
+        query
+    bounding_box_train_duke_style
+``` 
+
 
 # Performances
 ## Market1501
