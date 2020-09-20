@@ -11,6 +11,18 @@ HJL-re-id
 - If you have any quesions, please contact me by my email. 
 - My emails is: *nickhuang1996@126.com*.
 
+# Citation
+
+If you find our work useful, please kindly cite our paper:
+```
+@article{huang2020MDRS,
+  title={Joint multi-scale discrimination and region segmentation for person re-ID},
+  author={Huang, Jialiang and Lio, bo and Fu, lihua},
+  journal={Pattern Recognition Letters},
+  year={2020}
+}
+```
+
 # MDRS
 - Name: [*Joint multi-scale discrimination and region segmentation for person re-ID*](https://www.sciencedirect.com/science/article/pii/S0167865520303275#bib0023)
 - Journal: [*Pattern Recognition Letters*](https://www.sciencedirect.com/journal/pattern-recognition-letters)
