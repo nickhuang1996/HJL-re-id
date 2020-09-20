@@ -28,4 +28,4 @@ cfg.optim.epochs_per_val = 20
 cfg.optim.lr_decay_epochs = (360, 420, 440)  #
 cfg.optim.normal_epochs = 440  # Not including warmup/pretrain
 cfg.optim.resume = False
-cfg.only_test = False  #
+cfg.only_test = True  #

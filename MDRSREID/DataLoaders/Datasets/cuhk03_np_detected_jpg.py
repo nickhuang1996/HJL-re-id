@@ -29,7 +29,8 @@ class CUHK03NpDetectedJpg(Dataset):
         self.authority = authority
         self.png_im_root = 'cuhk03-np'
         self.im_root = 'cuhk03-np-jpg'
-        self._save_png_as_jpg()
+        # If you don't have jpg files, please use this function
+        # self._save_png_as_jpg()
 
         self.train_dir = osp.join(self.im_root, 'bounding_box_train')
         self.query_dir = osp.join(self.im_root, 'query')

@@ -178,7 +178,8 @@ cfg.dataset.test.after_to_tensor_transform_list = None
 
 num_classes_dict = {
     'market1501': 751,
-    'duke': 702
+    'duke': 702,
+    'cuhk03_np_detected_jpg': 0
 }
 cfg.model.num_classes = num_classes_dict[cfg.dataset.train.source.name] if cfg.only_test else None # 751 702
 
