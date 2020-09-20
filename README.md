@@ -235,7 +235,9 @@ ${project_dir}/weights_results
 | duke | ${project_dir}/weights_results/HJL-ReID/MDRS_ADAM_random_erasing_margin_0.3_duke_best | $(project_dir)/HJL-ReID/MDRSREID/Settings/config/overwrite_config/MDRS_config_ADAM_best_duke.txt |
 | cuhk03 | ${project_dir}/weights_results/HJL-ReID/MDRS_ADAM_random_erasing_margin_0.3_cuhk_jpg_best | $(project_dir)/HJL-ReID/MDRSREID/Settings/config/overwrite_config/MDRS_config_ADAM_best_cuhk03_jpg.txt |
 - If you want to test, just modify `cfg.only_test = False` to `cfg.only_test = True` in `./MDRSREID/Settings/config/overwrite_config/${config_file}`
-- Overwrite config files can be found in: [./MDRSREID/Settings/config/overwrite_config/](MDRSREID/Settings/config/overwrite_config)
+
+### Config files
+Overwrite config files can be found in: [./MDRSREID/Settings/config/overwrite_config/](MDRSREID/Settings/config/overwrite_config)
 
 | config_file |
 | -------------- |
