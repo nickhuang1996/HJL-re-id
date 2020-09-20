@@ -33,7 +33,7 @@ If you find our work useful, please kindly cite our paper:
 ```
 
 # MDRS
-- Name: [*Joint multi-scale discrimination and region segmentation for person re-ID*](https://www.sciencedirect.com/science/article/pii/S0167865520303275#bib0023)
+- Name: [*Joint multi-scale discrimination and region segmentation for person re-ID*](https://www.sciencedirect.com/science/article/pii/S0167865520303275)
 - Journal: [*Pattern Recognition Letters*](https://www.sciencedirect.com/journal/pattern-recognition-letters)
 - [Volume 138](https://www.sciencedirect.com/journal/pattern-recognition-letters/vol/138/suppl/C), October 2020, Pages 540-547
 - JCR: Q2
