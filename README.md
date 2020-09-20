@@ -16,7 +16,7 @@ HJL-re-id
 - Journal: [Pattern Recognition Letters](https://www.sciencedirect.com/journal/pattern-recognition-letters)
 - JCR: Q2
 ## Architecture
-![](https://github.com/nickhuang1996/HJL-re-id/tree/master/imgs/architecture.jpg)
+![](imgs/architecture.jpg)
 
 ### Dependencies
  - Python >= 3.6
@@ -27,7 +27,7 @@ HJL-re-id
  - torchvision==0.2.1
  
  ## Ranked Images
-![](https://github.com/nickhuang1996/HJL-re-id/tree/master/imgs/ranked_images.jpg)
+![](imgs/ranked_images.jpg)
 
 # Performances
 ## Market1501
