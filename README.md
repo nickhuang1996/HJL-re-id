@@ -46,7 +46,9 @@ If you find our work useful, please kindly cite our paper:
  
 # Dataset Structure
 - Main structure illustrates the data structure for person re-id.
-
+- Download link: [ReID_dataset](https://pan.baidu.com/s/1KyKi_3AROYF0nsZcFMISEA)
+- Pwd: eseu
+- `bounding_box_train_camstyle` are supposed to be in right place for unsupervised learning.
 ## Main Structure
 - [market1501-structure](#market1501-structure)
 - [duke-structure](#duke-structure)
