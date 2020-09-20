@@ -9,11 +9,11 @@ HJL-re-id
 - For HJL, this is my name initials -- Huang Jialiang.
 - I has estabilished the structure containing the introduction of person re-id models like `PCB`,`MGN` and `MDRS`(my paper), `PGFA` and `HOReID`. These structures are all reproduced by myself in this code framework.
 - If you have any quesions, please contact me by my email. 
-- My emails is: nickhuang1996@126.com.
+- My emails is: *nickhuang1996@126.com*.
 
 # MDRS
 - Name: [*Joint multi-scale discrimination and region segmentation for person re-ID*](https://www.sciencedirect.com/science/article/pii/S0167865520303275#bib0023)
-- Journal: [Pattern Recognition Letters](https://www.sciencedirect.com/journal/pattern-recognition-letters)
+- Journal: [*Pattern Recognition Letters*](https://www.sciencedirect.com/journal/pattern-recognition-letters)
 - JCR: Q2
 - web of science
 ## Architecture
