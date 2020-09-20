@@ -25,6 +25,9 @@ HJL-re-id
  - tqdm
  - scipy
  - torchvision==0.2.1
+ 
+ ## Ranked Images
+![](imgs/ranked_images.jpg)
 
 # Performances
 ## Market1501
