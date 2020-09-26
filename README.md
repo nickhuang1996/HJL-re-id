@@ -55,8 +55,13 @@ If you find our work useful, please kindly cite our paper:
  
 # Dataset Structure
 - Main structure illustrates the data structure for person re-id.
+
+### BaiduNetDisk Cloud
 - Download link: [ReID_dataset](https://pan.baidu.com/s/1KyKi_3AROYF0nsZcFMISEA)
 - Pwd: eseu
+
+### Google Drive
+- Download link: [ReID_dataset](https://drive.google.com/drive/folders/1xjdDK1Q7bbFwfFma9YSIxXS_cdh3jcAC)
 - `bounding_box_train_camstyle` are supposed to be in right place for unsupervised learning.
 ## Main Structure
 - [market1501-structure](#market1501-structure)
@@ -201,8 +206,11 @@ ${project_dir}/ReID_dataset/cuhk03_np_detected_jpg
 ``` 
 
 ## Models
+### BaiduNetDisk
 - Download link: [weights_results](https://pan.baidu.com/s/1E3Iy1mAdui_VY7ydNB-RDw) 
 - Pwd: ei5o
+### Google Drive
+- Download link: [weights_results](https://drive.google.com/drive/folders/1lY61BPeI8QAlKjrgikWSHMxs8eBTmG3z)
 
 | Name | 
 |------|
