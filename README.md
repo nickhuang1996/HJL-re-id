@@ -62,6 +62,7 @@ If you find our work useful, please kindly cite our paper:
 
 ### Google Drive
 - Download link: [ReID_dataset](https://drive.google.com/drive/folders/1xjdDK1Q7bbFwfFma9YSIxXS_cdh3jcAC)
+### Notice
 - `bounding_box_train_camstyle` are supposed to be in right place for unsupervised learning.
 ## Main Structure
 - [market1501-structure](#market1501-structure)
