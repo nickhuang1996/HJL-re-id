@@ -215,6 +215,7 @@ ${project_dir}/ReID_dataset/cuhk03_np_detected_jpg
 - `HJL-ReID` is the project name, where three datasets results and weights are produced after training.
 - `MDRS_feat_dict.mat` restores gallery and query data features by extracted from trained models for evaluations.
 - You are supposed to download and save these files according to the following structure:
+- `tensorboard` and `default_config.py` will be automatically created if you run codes. 
 ```
 ${project_dir}/weights_results
     pretrained_models
