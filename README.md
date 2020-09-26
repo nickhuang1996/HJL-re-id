@@ -212,6 +212,9 @@ ${project_dir}/ReID_dataset/cuhk03_np_detected_jpg
 - Pwd: ei5o
 ### Google Drive
 - Download link: [weights_results](https://drive.google.com/drive/folders/1lY61BPeI8QAlKjrgikWSHMxs8eBTmG3z)
+- Pre-trained Pose Model [pose_hrnet_w48_256x192.pth](https://drive.google.com/drive/folders/1hOTihvbyIxsm5ygDpbUuJ7O_tzv4oXjC) 
+is supposed to be set into path ```${project_dir}/weights_results/HOReID/pre-trained/pose_model/pose_hrnet_w48_256x192.pth```
+so that run `HOReID` task.
 
 | Name | 
 |------|
