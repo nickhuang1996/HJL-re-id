@@ -249,10 +249,10 @@ ${project_dir}/weights_results
 ### No IDE
 - if you want to command, followed by:
 - `python demo.py --model_name MDRS
-    --exp_dir ${project_dir}/weights_results/HJLReID/MDRS_ADAM_random_erasing_margin_0.3_market_best
-    --default_config_path $(project_dir)/HJLReID/MDRSREID/Settings/config/default_config.py
-    --ow_config_path $(project_dir)/HJLReID/MDRSREID/Settings/config/overwrite_config/MDRS_config_ADAM_best_market1501.txt
-    --ow_str cfg.dataset.train.name = 'market1501'`
+    --exp_dir ${project_dir}/weights_results/HJL-ReID/MDRS_ADAM_random_erasing_margin_0.3_market_best
+    --default_config_path $(project_dir)/HJL-ReID/MDRSREID/Settings/config/default_config.py
+    --ow_config_path $(project_dir)/HJL-ReID/MDRSREID/Settings/config/overwrite_config/MDRS_config_ADAM_best_market1501.txt
+    --ow_str "cfg.dataset.train.name = 'market1501'"`
 ### IDE
 - or if you have IDE like `pycharm`, you can just modify `MDRSREID/parser_args/parser_args.py`
 - You just modify `--exp_dir` and `--ow_config_path`. Then run `demo.py`.
