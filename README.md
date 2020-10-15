@@ -316,9 +316,12 @@ def parser_args():
 ```
 # Evaluation
 
-- For saving time on extraction features, I have provided three `feat_dict.mat`. You can use these feat_dict.mat to test models.
+- For saving time on feature extraction, I have provided three `MDRS_feat_dict.mat` in `weights_results`. You can use these `feat_dict.mat` to test models.
+- Download link：[weights_results](https://drive.google.com/drive/folders/1lY61BPeI8QAlKjrgikWSHMxs8eBTmG3z)
+###*Warning*: 
+- These `feat_dict.mat` files are for testing so please avoid them being rewritten if you set `cfg.only_test = False`.
 
-- The stdout files as below：
+The stdout files as below：
 ### Market1501
 ```
 => Experiment Output Directory: D:/weights_results/HJL-ReID/MDRS_ADAM_random_erasing_margin_0.3_market_best
