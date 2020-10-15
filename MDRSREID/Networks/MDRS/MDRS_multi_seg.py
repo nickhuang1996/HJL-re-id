@@ -76,27 +76,33 @@ class MDRSMultiSeg(nn.Module):
 
     def forward(self, in_dict):
         """
-        [N, 2048, 12, 4] ==>  [N, 1024, 24, 8] ==> [N, 256, 48, 16] ==> [N, 8, 48, 16]
-        [N, 2048, 24, 8] ==> [N, 256, 48, 16] ==> [N, 8, 48, 16]
-        [N, 2048, 24, 8] ==> [N, 256, 48, 16] ==> [N, 8, 48, 16]
-
+        Option 1:
         [N, 2048, 8, 3] ==>  [N, 1024, 24, 9] ==> [N, 1024, 24, 8] ==> [N, 256, 48, 16] ==> [N, 8, 48, 16]
         [N, 2048, 12, 4] ==>  [N, 1024, 24, 8] ==> [N, 256, 48, 16] ==> [N, 8, 48, 16]
+        [N, 2048, 24, 8] ==> [N, 256, 48, 16] ==> [N, 8, 48, 16]
+
+        Option 2:
+        [N, 2048, 12, 4] ==>  [N, 1024, 24, 8] ==> [N, 256, 48, 16] ==> [N, 8, 48, 16]
+        [N, 2048, 24, 8] ==> [N, 256, 48, 16] ==> [N, 8, 48, 16]
         [N, 2048, 24, 8] ==> [N, 256, 48, 16] ==> [N, 8, 48, 16]
 
         """
         feat_list = in_dict['feat_list']
         multi_seg_pred_list = []
+        # Option 1
         # for i in range(self.cfg.blocksetting.multi_seg):
         #     if i == 0:
+        #         multi_seg_pred_list.append(self.conv(self.relu(self.bn(self.deconv2(self.deconv3_pool(self.deconv3(feat_list[i])))))))
+        #     elif i == 1:
         #         multi_seg_pred_list.append(self.conv(self.relu(self.bn(self.deconv2(self.deconv1(feat_list[i]))))))
-        #     else:
+        #     elif i == 2:
         #         multi_seg_pred_list.append(self.conv(self.relu(self.bn(self.deconv(feat_list[i])))))
+        # Option 2
         for i in range(self.cfg.blocksetting.multi_seg):
             if i == 0:
-                multi_seg_pred_list.append(self.conv(self.relu(self.bn(self.deconv2(self.deconv3_pool(self.deconv3(feat_list[i])))))))
-            elif i == 1:
                 multi_seg_pred_list.append(self.conv(self.relu(self.bn(self.deconv2(self.deconv1(feat_list[i]))))))
-            elif i == 2:
+            else:
                 multi_seg_pred_list.append(self.conv(self.relu(self.bn(self.deconv(feat_list[i])))))
+
         return multi_seg_pred_list
+
