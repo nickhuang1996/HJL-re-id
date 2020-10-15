@@ -113,7 +113,10 @@ class TripletLoss(Loss):
         #  ......
         #  [0, 0, 0, ..., 1]]
         is_self = labels.new().resize_(N, N).copy_(torch.eye(N)).byte()
-        is_pos = labels.expand(N, N).eq(labels.expand(N, N).t())
+        if torch.__version__ == '1.4.0':
+            is_pos = labels.expand(N, N).eq(labels.expand(N, N).t()).byte()
+        else:
+            is_pos = labels.expand(N, N).eq(labels.expand(N, N).t())
         K = is_pos.sum(1)[0]  # each person choose K image
         P = int(N / K)  # person number
         assert P * K == N, "P * K = {}, N = {}".format(P * K, N)
