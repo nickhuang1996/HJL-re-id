@@ -502,7 +502,7 @@ def parser_args():
 	 use : False
  src_multi_seg_loss :
 	 name : psL
-	 weight : 0
+	 weight : 1
 	 use : False
 	 normalize_size : True
 	 num_classes : 8
@@ -1208,7 +1208,7 @@ market1501 -> market1501      [mAP:  87.5%], [cmc1:  95.1%], [cmc5:  98.2%], [cm
 	 use : False
  src_multi_seg_loss :
 	 name : psL
-	 weight : 0
+	 weight : 1
 	 use : False
 	 normalize_size : True
 	 num_classes : 8
@@ -1914,7 +1914,7 @@ destination path dir D:/weights_results/HJL-ReID/MDRS_ADAM_random_erasing_margin
 	 use : False
  src_multi_seg_loss :
 	 name : psL
-	 weight : 0
+	 weight : 1
 	 use : False
 	 normalize_size : True
 	 num_classes : 8
