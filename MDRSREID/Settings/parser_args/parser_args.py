@@ -17,7 +17,7 @@ def parser_args():
                         help='[Optional] Model Name for experiment directory in current directory if exp_dir is None')
     parser.add_argument('--exp_dir',
                         type=str,
-                        default='D:/weights_results/HJL-ReID/HuangN_ADAM_random_erasing_margin_0.3_cuhk_jpg_best', # 'D:/weights_results/HOReID/pre-trained',  #
+                        default='D:/weights_results/HJL-ReID/MDRS_ADAM_random_erasing_margin_0.3_cuhk_jpg_best', # 'D:/weights_results/HOReID/pre-trained',  #
                         help='[Optional] Directory to store experiment output, '
                              'including log files and model checkpoint, etc.')
     parser.add_argument('--default_config_path',
