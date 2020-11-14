@@ -12,6 +12,7 @@ torch_version_factory = {
     '0.4.1': load_state_dict_bnt,
     '1.0.0': load_state_dict_bnt,
     '1.0.1': load_state_dict_bnt,
+    '1.1.0': load_state_dict_bnt,
     '1.2.0': load_state_dict_bnt,
     '1.4.0': load_state_dict_bnt,
 }
