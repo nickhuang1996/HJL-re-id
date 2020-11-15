@@ -38,10 +38,10 @@ class Model(BaseModel):
             assert len(new_params) > 0, "No new params to pretrain!"
             param_groups = [{'params': new_params, 'lr': self.cfg.optim.new_params_lr}]
         else:
-            param_groups = [{'params': ft_params, 'lr': self.cfg.optim.ft_lr}]
+            param_groups = [{'params': ft_params, 'lr': self.cfg.optim.ft_lr, 'initial_lr': self.cfg.optim.initial_ft_lr}]
             # Some model may not have new params
             if len(new_params) > 0:
-                param_groups += [{'params': new_params, 'lr': self.cfg.optim.new_params_lr}]
+                param_groups += [{'params': new_params, 'lr': self.cfg.optim.new_params_lr, 'initial_lr': self.cfg.optim.initial_new_params_lr}]
         return param_groups
 
     def _check_model_attr(self, modules, module_name, module_names):

@@ -32,5 +32,5 @@ def weights_init_classifier(m):
     classname = m.__class__.__name__
     if classname.find('Linear') != -1:
         init.normal_(m.weight.data, std=0.001)
-        if m.bias:
+        if m.bias is not None:
             init.constant_(m.bias.data, 0.0)

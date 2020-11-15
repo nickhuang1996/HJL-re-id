@@ -7,7 +7,7 @@ HJL-re-id
 # Introduction
 - This repository is for person re-id including supervised learning, unsupervised learning and occluded person re-id task. You can utilize this code to learn how to make `person re-id`tasks. 
 - For HJL, this is my name initials -- Huang Jialiang.
-- I has estabilished the structure containing the introduction of person re-id models like `PCB`,`MGN` and `MDRS`(my paper), `PGFA` and `HOReID`. These structures are all reproduced by myself in this code framework.
+- I has estabilished the structure containing the introduction of person re-id models like `PCB`,`MGN` and `MDRS`(my paper), `PGFA`, `Pyramid` and `HOReID`. These structures are all reproduced by myself in this code framework.
 - If you have any quesions, please contact me by my email. 
 - My emails is: *nickhuang1996@126.com*.
 
@@ -18,6 +18,7 @@ These models are all reproduced by myself through this code framework.
 - PCB [ECCV2018] [*Beyond Part Models: Person Retrieval with Refined Part Pooling (and A Strong Convolutional Baseline)*](https://arxiv.org/pdf/1711.09349.pdf)
 - MGN [ACM Multimedia 2018] [*Learning Discriminative Features with Multiple Granularities for Person Re-Identification*](https://arxiv.org/abs/1804.01438)
 - PGFA [ICCV2019] [*Pose-Guided Feature Alignment for Occluded Person Re-Identification*](https://ieeexplore.ieee.org/document/9010704)
+- Pyramid [CVPR2019] [*Pyramidal Person Re-IDentification via Multi-Loss Dynamic Training*](https://openaccess.thecvf.com/content_CVPR_2019/papers/Zheng_Pyramidal_Person_Re-IDentification_via_Multi-Loss_Dynamic_Training_CVPR_2019_paper.pdf)
 - HOReID [CVPR2020] [*High-Order Information Matters: Learning Relation and Topology for Occluded Person Re-Identification*](http://openaccess.thecvf.com/content_CVPR_2020/html/Wang_High-Order_Information_Matters_Learning_Relation_and_Topology_for_Occluded_Person_CVPR_2020_paper.html)
 
 # Citation
