@@ -2493,7 +2493,7 @@ destination path dir D:/weights_results/HJL-ReID/MDRS_ADAM_random_erasing_margin
 
 
 # Other models
-- We have provided [PGFAReIDTrainer.py](MDRSREID/Trainer/PGFAReIDTrainer.py) and 
+- We have provided [PGFAReIDTrainer.py](MDRSREID/Trainer/PGFAReIDTrainer.py), [PyramidalReIDTrainer.py](MDRSREID/Trainer/PyramidalReIDTrainer.py)and 
 [HOReIDTrainer.py](MDRSREID/Trainer/HOReIDTrainer.py) for `PGFA` and `HOReID`.
 
 # To Do
