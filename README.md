@@ -2497,5 +2497,5 @@ destination path dir D:/weights_results/HJL-ReID/MDRS_ADAM_random_erasing_margin
 [HOReIDTrainer.py](MDRSREID/Trainer/HOReIDTrainer.py) for `PGFA` and `HOReID`.
 
 # To Do
-- Add instructions of other model `MGN`, `PCB`, `PGFA` and `HOReID`.
+- Add instructions of other model `MGN`, `PCB`, `PGFA`, `Pyramid` and `HOReID`.
 - I will consider if `MGNReID.py` and `PCBReIDTRainer.py` are necessary.
