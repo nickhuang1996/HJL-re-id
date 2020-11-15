@@ -1,7 +1,7 @@
 from MDRSREID.Trainer.evaluation_creation import MDRS_Evaluation
 from MDRSREID.Trainer.evaluation_creation import PGFA_Evaluation
 from MDRSREID.Trainer.evaluation_creation import HOReID_Evaluation
-
+from MDRSREID.Trainer.evaluation_creation import Pyramidal_Evaluation
 from .load_feat_dict import load_feat_dict
 from .save_feat_dict import save_feat_dict
 
@@ -9,6 +9,7 @@ model_factory = {
     'MDRS': MDRS_Evaluation,
     'PGFA': PGFA_Evaluation,
     'HOReID': HOReID_Evaluation,
+    'Pyramidal': Pyramidal_Evaluation,
 }
 
 use_gcn_dict = {
