@@ -92,6 +92,7 @@ cfg.model.pool_type = 'GlobalPool'  # ['GlobalPool', 'PCBPool', 'PAPool']
 cfg.model.max_or_avg = 'max'
 cfg.model.em_dim = 512  #
 cfg.model.num_parts = 1  #
+cfg.model.used_levels = None  #
 cfg.model.use_ps = False  #
 
 cfg.model.reduction = EasyDict()
@@ -179,7 +180,7 @@ cfg.dataset.test.after_to_tensor_transform_list = None
 num_classes_dict = {
     'market1501': 751,
     'duke': 702,
-    'cuhk03_np_detected_jpg': 0
+    'cuhk03_np_detected_jpg': 767
 }
 cfg.model.num_classes = num_classes_dict[cfg.dataset.train.source.name] if cfg.only_test else None # 751 702
 
@@ -327,8 +328,10 @@ cfg.optim.adam.weight_decay = 5e-4
 
 cfg.optim.seperate_params = False
 cfg.optim.base_lr = 0.00035
-cfg.optim.ft_lr = 0.01  #
-cfg.optim.new_params_lr = 0.02  #
+cfg.optim.ft_lr = 0.01  # for resume
+cfg.optim.initial_ft_lr = 0.01  #
+cfg.optim.new_params_lr = 0.02  # for resume
+cfg.optim.initial_new_params_lr = 0.02
 cfg.optim.gcn_lr_scale = 0.1
 cfg.optim.gm_lr_scale = 1.0
 cfg.optim.ver_lr_scale = 1.0
