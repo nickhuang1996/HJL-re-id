@@ -88,6 +88,12 @@ cfg.model.backbone.last_conv_stride = 1
 cfg.model.backbone.pretrained = True
 cfg.model.backbone.pretrained_model_dir = 'D:/weights_results/pretrained_model/imagenet_model'
 
+cfg.model.RGA = EasyDict()
+cfg.model.RGA.branch_name = 'rgasc'  # ['rgasc', 'rgac', 'rgas']
+cfg.model.RGA.channel_ratio = 8
+cfg.model.RGA.spatial_ratio = 8
+cfg.model.RGA.downchannel_ratio = 8
+
 cfg.model.pool_type = 'GlobalPool'  # ['GlobalPool', 'PCBPool', 'PAPool']
 cfg.model.max_or_avg = 'max'
 cfg.model.em_dim = 512  #
