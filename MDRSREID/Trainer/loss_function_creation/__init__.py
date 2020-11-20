@@ -6,6 +6,7 @@ from MDRSREID.Loss_Meter.triplet_loss import TripletHardLoss
 from MDRSREID.Loss_Meter.permutation_loss import PermutationLoss
 from MDRSREID.Loss_Meter.verification_loss import VerificationLoss
 from MDRSREID.Loss_Meter.PGFA_loss import PGFALoss
+from MDRSREID.Loss_Meter.Seg_loss import SegLoss
 from MDRSREID.Loss_Meter.Multi_Seg_loss import MultiSegLoss
 from MDRSREID.Loss_Meter.Multi_Seg_GP_loss import MultiSegGPLoss
 from MDRSREID.Loss_Meter.invariance_loss import InvNet
@@ -31,6 +32,8 @@ def loss_function_creation(cfg, tb_writer):
         loss_functions[cfg.verification_loss.name] = VerificationLoss(cfg.verification_loss, tb_writer)
     if cfg.pgfa_loss.use:
         loss_functions[cfg.pgfa_loss.name] = PGFALoss(cfg.pgfa_loss, tb_writer)
+    if cfg.src_seg_loss.use:
+        loss_functions[cfg.src_seg_loss.name] = SegLoss(cfg.src_seg_loss, tb_writer)
     if cfg.src_multi_seg_loss.use:
         loss_functions[cfg.src_multi_seg_loss.name] = MultiSegLoss(cfg.src_multi_seg_loss, tb_writer)
     if cfg.src_multi_seg_gp_loss.use:
