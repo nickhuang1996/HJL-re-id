@@ -104,6 +104,10 @@ cfg.model.PGFA = EasyDict()
 cfg.model.PGFA.global_input_dim = 4096
 cfg.model.PGFA.part_feat_input_dim = 2048
 
+cfg.model.seg = EasyDict()
+cfg.model.seg.out_c = 256
+cfg.model.seg.num_classes = 8
+
 cfg.model.multi_seg = EasyDict()
 cfg.model.multi_seg.mid_c = 256
 cfg.model.multi_seg.mid_c2 = 512
@@ -267,9 +271,17 @@ cfg.verification_loss.name = 'verL'
 cfg.verification_loss.weight = 0
 cfg.verification_loss.use = cfg.verification_loss.weight > 0
 
+# Source domain ps loss
+cfg.src_seg_loss = EasyDict()
+cfg.src_seg_loss.name = 'sL'
+cfg.src_seg_loss.weight = 0
+cfg.src_seg_loss.use = cfg.src_seg_loss.weight > 0
+cfg.src_seg_loss.normalize_size = True
+cfg.src_seg_loss.num_classes = cfg.model.seg.num_classes
+
 # source domain ps loss
 cfg.src_multi_seg_loss = EasyDict()
-cfg.src_multi_seg_loss.name = 'psL'
+cfg.src_multi_seg_loss.name = 'msL'
 cfg.src_multi_seg_loss.weight = 0  #
 cfg.src_multi_seg_loss.use = cfg.src_multi_seg_loss.weight > 0
 cfg.src_multi_seg_loss.normalize_size = True
